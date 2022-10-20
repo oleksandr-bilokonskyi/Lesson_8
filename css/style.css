@@ -29,7 +29,7 @@ body {
    text-transform: uppercase;
    color: #FF3F3A;
    margin: 0 auto;
-   padding-bottom: 12px;
+   margin-bottom: 12px;
 }
 
 .header__title {
@@ -46,9 +46,14 @@ body {
    margin: 0 auto;
 }
 
-[class*="__container"] {
-   max-width: 810px;
+.page__container {
+   margin: 0 auto;
+   text-align: center;
 }
+
+/*[class*="__container"] {
+   max-width: 810px;
+}*/
 
 .page__title {
    font-weight: 900;
@@ -59,7 +64,7 @@ body {
 }
 
 .page__main-text {
-   max-width: 600px;
+
    line-height: 1.6;
    color: #424551;
    margin-bottom: 48px;
@@ -75,14 +80,18 @@ body {
 
 
 
-.page__text ul {
+.page__text {
    margin-bottom: 204px;
 }
 
-.page__text li {
+.page__text :not(:last-child) {
    margin-bottom: 15px;
+}
+
+.page__text li {
    padding-left: 32px;
    line-height: 1.6;
+   text-align: left;
    background: url(../img/icons/Vector.svg) 0 6px / 16px no-repeat;
 }
 
@@ -98,6 +107,7 @@ body {
    max-width: 1230px;
    padding-left: 600px;
    background: url(../img/image.jpg) 0 0 / 458px 600px no-repeat;
+   margin-bottom: 316px;
 }
 
 .page__title-2 {
@@ -128,9 +138,6 @@ body {
    font-weight: 700;
    line-height: 1.6;
    color: #424551;
-}
-
-.page__text-2 ul {
    margin-bottom: 32px;
 }
 
@@ -139,32 +146,27 @@ body {
 }
 
 .page__text-2 li.star {
-   /*margin-bottom: 15px;*/
    padding-left: 32px;
    line-height: 1.6;
    background: url(../img/icons/Star.svg) 0 6px / 16px no-repeat;
 }
 
 .page__text-2 li.courses {
-   /*margin-bottom: 15px;*/
    padding-left: 32px;
    line-height: 1.6;
    background: url(../img/icons/icon_courses.svg) 0 6px / 16px no-repeat;
 }
 
 .page__text-2 li.students {
-   /*margin-bottom: 15px;*/
    padding-left: 32px;
    line-height: 1.6;
    background: url(../img/icons/icon_students.svg) 0 6px / 16px no-repeat;
 }
 
 .page__main-text-3 {
-   max-width: 600px;
    text-align: left;
    line-height: 1.6;
    color: #424551;
-   margin-bottom: 316px;
 }
 
 /* ================= псевдокласи =====================*/
