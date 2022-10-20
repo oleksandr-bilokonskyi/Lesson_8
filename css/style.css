@@ -323,9 +323,10 @@ li:hover>ul {
    color: white;
    padding: 10px;
    border-radius: 5px;
+   margin-bottom: 30px;
 }
 
-.text-1 p {
+.text-1 :not(:last-child) {
    margin-bottom: 30px;
 }
 
